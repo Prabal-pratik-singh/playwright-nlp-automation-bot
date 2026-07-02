@@ -23,25 +23,25 @@ An advanced, fully autonomous web automation script built with Node.js and Playw
 
  2.  **Install dependencies:**
 
-       Bash
+       ```bash
        npm install dotenv playwright
 
 
  3.   **Install the Playwright Browsers (Crucial Step):**
 
-      Bash
+      ```bash
       npx playwright install chromium
 
  4.   **Configure your credentials:**
       Create a .env file in the root directory and add your account details. (Note: We use LOGIN_EMAIL instead of USERNAME to prevent conflicts with Windows system environment variables).
 
       copy paste this im .env
-
+      ```
       LOGIN_EMAIL=your_email@domain.com
       PASSWORD=your_password
 
 5. **in last run this in your device terminal** 
-
+      ```
       node index.js
 
 The bot will launch a Chromium browser, log in, and wait for your manual input to select a starting section. Once the section URL is locked in, it takes over completely.
